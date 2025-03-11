@@ -10,6 +10,8 @@ void *myFunc(void *myVar);
 
 int main()
 {
+    // pthread is a data type that represents a thread
+    // In OS, thread is a lightweight process that shares the same memory space as the parent process
     pthread_t thread1, thread2;
     char *msg1 = "First Thread";
     char *msg2 = "Second Thread";
@@ -24,14 +26,17 @@ int main()
 
     printf("Currently in the main thread function\n");
 
+    // Joining the threads
     pthread_join(thread1, NULL);
     pthread_join(thread2, NULL);
 
+    // Printing the return value of the threads
     printf("First thread returns: %d\n", ret1);
     printf("Second thread returns: %d\n", ret2);
     return 0;
 }
 
+// We need this function *myFunc to be a pointer to a function
 void *myFunc(void *myVar)
 {
     // Casting the void pointer to a char pointer

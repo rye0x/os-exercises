@@ -3,7 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Deceleration of the function that will execute by each thread
+// This program ask a user to enter the number of threads to create
+// Then it creates the threads and join them
+// Decleration of the function that will execute by each thread
 void *threadexer1(void *var);
 
 int main()
