@@ -1,1 +1,1 @@
-# Repository of Machine Exercises in Operating System Class
+# Repository of Machine Exercises in CMSC125 - Operating System
